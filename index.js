@@ -36,11 +36,11 @@ function viewCart() {
     default:
       for (let i = 0; i < cart.length; i++) {
          if (i === 0){
-           msg = `In your cart, you have ${cart[0].itemName} at $${cart[0].itemPrice}`;
+           msg = `In your cart, you have ${cart[i].itemName} at $${cart[i].itemPrice}`;
          } else if ( i === cart.length ){
-           msg += `, and ${cart[0].itemName} at $${cart[0].itemPrice}.`;
+           msg += `, and ${cart[i].itemName} at $${cart[i].itemPrice}.`;
          } else {
-           msg += `, ${cart[0].itemName} at $${cart[0].itemPrice}`;
+           msg += `, ${cart[i].itemName} at $${cart[i].itemPrice}`;
          }
       }
       break;
