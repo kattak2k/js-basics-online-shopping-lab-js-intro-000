@@ -25,7 +25,7 @@ function viewCart() {
   // write your code here
   let msg = "";
   debugger;
-  
+
   switch (cart.length){
     case 0:
       msg = "Your shopping cart is empty.";
