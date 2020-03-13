@@ -23,20 +23,27 @@ function addToCart(item) {
 
 function viewCart() {
   // write your code here
+  let msg = ""
   switch (cart.length){
     case 0:
-      return "Your shopping cart is empty.";
+      msg = "Your shopping cart is empty.";
+      break;
     case 1:
-      return `In your cart, you have ${cart[0].itemName} at $${cart[0].itemPrice}.`
-    case 2:
-
+      msg = `In your cart, you have ${cart[0].itemName} at $${cart[0].itemPrice}.`
+      break;
     default:
+      for (let i = 0; i < cart.length; i++){
+         if (i === 0){
+           msg = `In your cart, you have ${cart[0].itemName} at $${cart[0].itemPrice}`
+         } else if ( i === cart.length ){
+           msg += `, and ${cart[0].itemName} at $${cart[0].itemPrice}.`
+         } else {
+           msg += `, ${cart[0].itemName} at $${cart[0].itemPrice}`
+         }
+      }
+      break;
   }
-  if (cart.length == 0){
-    return "Your shopping cart is empty.";
-  } else {
-    return `In your cart, you have ${cart[0].itemName} at $${cart[0].itemPrice}.`
-  }
+   return msg;
 }
 
 function total() {
