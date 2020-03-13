@@ -25,9 +25,9 @@ function viewCart() {
   // write your code here
   switch (cart.length){
     case 0:
-
+      return "Your shopping cart is empty.";
     case 1:
-
+      return `In your cart, you have ${cart[0].itemName} at $${cart[0].itemPrice}.`
     case 2:
 
     default:
