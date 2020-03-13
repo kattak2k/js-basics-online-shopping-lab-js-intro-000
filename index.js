@@ -1,4 +1,5 @@
 var cart = [];
+var cart_list = {};
 
 function getCart() {
  return cart;
@@ -9,8 +10,15 @@ function setCart(c) {
   return cart;
 }
 
+function updateObjectWithKeyAndValue(obj, key, value) {
+  return Object.assign({}, obj, { [key]: value });
+}
+
 function addToCart(item) {
  // write your code here
+  cart.push({itemName: item,
+             itemPrice: Math.floor(Math.random() * 100)});
+  return `${item} has been added to your cart.`;
 }
 
 function viewCart() {
