@@ -23,6 +23,15 @@ function addToCart(item) {
 
 function viewCart() {
   // write your code here
+  switch (cart.length){
+    case 0:
+
+    case 1:
+
+    case 2:
+
+    case 3:
+  }
   if (cart.length == 0){
     return "Your shopping cart is empty.";
   } else {
