@@ -23,7 +23,9 @@ function addToCart(item) {
 
 function viewCart() {
   // write your code here
-  let msg = ""
+  let msg = "";
+  debugger;
+  
   switch (cart.length){
     case 0:
       msg = "Your shopping cart is empty.";
