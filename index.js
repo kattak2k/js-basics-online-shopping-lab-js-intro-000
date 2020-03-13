@@ -32,7 +32,7 @@ function viewCart() {
       msg = `In your cart, you have ${cart[0].itemName} at $${cart[0].itemPrice}.`
       break;
     default:
-      for (let i = 0; i < cart.length; i++){
+      for (let i = 0; i < cart.length; i++) {
          if (i === 0){
            msg = `In your cart, you have ${cart[0].itemName} at $${cart[0].itemPrice}`;
          } else if ( i === cart.length ){
