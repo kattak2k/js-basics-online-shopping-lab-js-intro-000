@@ -30,7 +30,7 @@ function viewCart() {
 
     case 2:
 
-    case 3:
+    default:
   }
   if (cart.length == 0){
     return "Your shopping cart is empty.";
