@@ -59,7 +59,7 @@ function total() {
 
 function removeFromCart(item) {
   // write your code here
-  var none = false
+  var none = true
   for (let i = 0; i < cart.length; i++) {
     if (cart[i].itemName == item ){
       cart.splice(i, 1);
