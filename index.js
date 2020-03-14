@@ -79,9 +79,7 @@ function placeOrder(cardNumber = 0) {
     return "Sorry, we don't have a credit card on file for you.";
   } else {
 
-    while ( i < cart.length){
-      removeFromCart(cart[i].itemName)
-    }
+    cart = []
     return `Your total cost is $${total()}, which will be charged to the card ${cardNumber}.`
   }
 }
