@@ -37,7 +37,7 @@ function viewCart() {
       for (let i = 0; i < cart.length; i++) {
          if (i === 0){
            msg = `In your cart, you have ${cart[i].itemName} at $${cart[i].itemPrice}`;
-         } else if ( i === cart.length ){
+         } else if ( i === (cart.length - 1) ){
            msg += `, and ${cart[i].itemName} at $${cart[i].itemPrice}.`;
          } else {
            msg += `, ${cart[i].itemName} at $${cart[i].itemPrice}`;
