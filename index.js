@@ -73,7 +73,7 @@ function removeFromCart(item) {
 return cart;
 }
 
-function placeOrder(cardNumber) {
+function placeOrder(cardNumber = 0) {
   // write your code here
   console.log("$$$$$$$$$$$$$$$$$" + cardNumber);
   if (cardNumber == ""){
