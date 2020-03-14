@@ -59,8 +59,13 @@ function total() {
 
 function removeFromCart(item) {
   // write your code here
-  console.log(cart.indexOf(item))
-
+  for (let i = 0; i < cart.length; i++) {
+    if (cart[i].itemName == item ){
+      cart.splice(i, 1)
+    }
+  }
+  
+return cart
 }
 
 function placeOrder(cardNumber) {
